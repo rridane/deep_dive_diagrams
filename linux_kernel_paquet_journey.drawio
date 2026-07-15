@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="bnXOvh0r-duc4ZcqCWI2">
-    <mxGraphModel dx="1941" dy="1042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2305" dy="2407" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -137,12 +137,6 @@
         </mxCell>
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;" value="KERNEL GENERIC NETWORK STACK (L2/L3)" vertex="1">
           <mxGeometry height="60" width="159" x="2481.5" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-42" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-40">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="aOqNrHkwkGL7v4gfNeq1-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Interface is not in a bridge" vertex="1">
-          <mxGeometry height="25" width="170" x="2252" y="410" as="geometry" />
         </mxCell>
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-38" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aOqNrHkwkGL7v4gfNeq1-41">
           <mxGeometry relative="1" as="geometry" />
@@ -315,8 +309,11 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1360" y="805" />
-              <mxPoint x="1360" y="140" />
-              <mxPoint x="2080" y="140" />
+              <mxPoint x="1360" y="-170" />
+              <mxPoint x="2460" y="-170" />
+              <mxPoint x="2460" y="166" />
+              <mxPoint x="2095" y="166" />
+              <mxPoint x="2095" y="-70" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -524,20 +521,8 @@
         <mxCell id="1uF0IlD_rjuPDObahj_V-1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" value="xdp hook" vertex="1">
           <mxGeometry height="50" width="80" x="1110" y="1010" as="geometry" />
         </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-30" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-10" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" value="hook tc ingress" vertex="1">
-          <mxGeometry height="50" width="80" x="2237" y="229.99999999999994" as="geometry" />
-        </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-13" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="si programmes ebpf rattachés à ce hook, sch_handle_ingress les execute" vertex="1">
-          <mxGeometry height="47.5" width="250" x="2340" y="230" as="geometry" />
-        </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-15" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="sch_handle_egress() appelles les programmes ebpf" vertex="1">
           <mxGeometry height="47.5" width="160" x="1930" y="1420" as="geometry" />
-        </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-16" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" value="hook cgroup sock_addr" vertex="1">
-          <mxGeometry height="50" width="120" x="3330" y="1820" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-14" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" value="hook tc egress" vertex="1">
           <mxGeometry height="50" width="100" x="2060" y="1450" as="geometry" />
@@ -545,23 +530,20 @@
         <mxCell id="1uF0IlD_rjuPDObahj_V-17" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="ici __cgroup_bpf_run_filter_sock_addr() appelle les programmes ebpf" vertex="1">
           <mxGeometry height="47.5" width="260" x="3420" y="1799.92" as="geometry" />
         </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-18" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;verticalAlign=top;" value="&lt;code data-end=&quot;619&quot; data-start=&quot;591&quot;&gt;__netif_receive_skb_core&lt;/code&gt;" vertex="1">
-          <mxGeometry height="264" width="249" x="1970" y="166" as="geometry" />
+        <mxCell id="1uF0IlD_rjuPDObahj_V-18" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;verticalAlign=top;size=0;" value="&lt;code data-end=&quot;619&quot; data-start=&quot;591&quot;&gt;__netif_receive_skb_core&lt;/code&gt;" vertex="1">
+          <mxGeometry height="520" width="980" x="1970" y="-70" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-32" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-24" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="ptype_all (tcpdump)" vertex="1">
-          <mxGeometry height="40" width="120" x="2034.5" y="210" as="geometry" />
+          <mxGeometry height="40" width="120" x="2034.5" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-29" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-35" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-34">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-26" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="sch_handle_ingress()" vertex="1">
-          <mxGeometry height="40" width="170" x="2010" y="268" as="geometry" />
+          <mxGeometry height="40" width="170" x="2009.5" y="150" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-36" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aOqNrHkwkGL7v4gfNeq1-92">
           <mxGeometry relative="1" as="geometry" />
@@ -575,9 +557,6 @@
         <mxCell id="1uF0IlD_rjuPDObahj_V-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Oui" vertex="1">
           <mxGeometry height="30" width="60" x="1850" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Non" vertex="1">
-          <mxGeometry height="30" width="60" x="2257" y="320" as="geometry" />
-        </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-43" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aOqNrHkwkGL7v4gfNeq1-107">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -585,10 +564,91 @@
           <mxGeometry height="44" width="120" x="2926" y="521.3" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-48" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-18">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2020" y="477" />
+              <mxPoint x="1950" y="477" />
+              <mxPoint x="1950" y="-170" />
+              <mxPoint x="2460" y="-170" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-46" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="update interface and repeat the process (to pass the hook with new inteface)" vertex="1">
           <mxGeometry height="86.7" width="140" x="1950" y="523.3" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-16" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" value="hook cgroup sock_addr" vertex="1">
+          <mxGeometry height="50" width="120" x="3330" y="1820" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-58" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="aOqNrHkwkGL7v4gfNeq1-77">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2910" y="240" />
+              <mxPoint x="2910" y="640" />
+              <mxPoint x="1920" y="640" />
+              <mxPoint x="1920" y="1514" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-61" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2445" y="290" />
+              <mxPoint x="2095" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aOqNrHkwkGL7v4gfNeq1-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Interface is not in a bridge" vertex="1">
+          <mxGeometry height="25" width="170" x="2252" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-30" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-10" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;" value="hook tc ingress" vertex="1">
+          <mxGeometry height="50" width="80" x="2280" y="144.99999999999994" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-49" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2487.544" y="138" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-57" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-60" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="1uF0IlD_rjuPDObahj_V-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-13" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="si programmes ebpf rattachés à ce hook, sch_handle_ingress les execute, et voici leurs returns possibles" vertex="1">
+          <mxGeometry height="77.5" width="274" x="2386" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Non" vertex="1">
+          <mxGeometry height="30" width="60" x="2257" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-53" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="TC_ACT_SHOT" vertex="1">
+          <mxGeometry height="25" width="170" x="2550" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-52" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="DROP" vertex="1">
+          <mxGeometry height="40" width="170" x="2490" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-56" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="TC_ACT_REDIRECT" vertex="1">
+          <mxGeometry height="25" width="170" x="2750" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-55" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="skb-&amp;gt;dev = cible" vertex="1">
+          <mxGeometry height="40" width="170" x="2730" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-59" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="TC_ACT_OK" vertex="1">
+          <mxGeometry height="25" width="90" x="2400" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-42" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=2" value="start" vertex="1">
+          <mxGeometry height="30" width="60" x="2140" y="5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
