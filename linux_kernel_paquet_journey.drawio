@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="bnXOvh0r-duc4ZcqCWI2">
-    <mxGraphModel dx="2837" dy="1523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="946" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -141,12 +141,13 @@
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-36" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" target="aOqNrHkwkGL7v4gfNeq1-49">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="2280" y="402" />
+              <mxPoint x="2337" y="580" />
+              <mxPoint x="2280" y="580" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Interface is not in a bridge" vertex="1">
-          <mxGeometry height="25" width="170" x="2620" y="390" as="geometry" />
+          <mxGeometry height="25" width="170" x="2252" y="410" as="geometry" />
         </mxCell>
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-38" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aOqNrHkwkGL7v4gfNeq1-41">
           <mxGeometry relative="1" as="geometry" />
@@ -584,8 +585,14 @@
         <mxCell id="1uF0IlD_rjuPDObahj_V-37" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="aOqNrHkwkGL7v4gfNeq1-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-34" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="rx_handler" vertex="1">
+        <mxCell id="1uF0IlD_rjuPDObahj_V-34" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="pointeur rx_handler installé sur skb-&amp;gt;dev ? " vertex="1">
           <mxGeometry height="40" width="170" x="2009.5" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Oui" vertex="1">
+          <mxGeometry height="30" width="60" x="1850" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Non" vertex="1">
+          <mxGeometry height="30" width="60" x="2257" y="320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
