@@ -323,6 +323,15 @@
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-86" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="netif_receive_skb_internal" vertex="1">
           <mxGeometry height="30" width="241" x="1459.5" y="790" as="geometry" />
         </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-44" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="aOqNrHkwkGL7v4gfNeq1-77">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1430" y="646" />
+              <mxPoint x="1430" y="1557" />
+              <mxPoint x="2160" y="1557" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-87" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="l2 forward" vertex="1">
           <mxGeometry height="30" width="120" x="1440" y="630.8" as="geometry" />
         </mxCell>
@@ -353,7 +362,7 @@
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-98" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="dst_mac != bridge mac" vertex="1">
           <mxGeometry height="25" width="170" x="1480" y="530.8" as="geometry" />
         </mxCell>
-        <mxCell id="1uF0IlD_rjuPDObahj_V-41" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-40">
+        <mxCell id="1uF0IlD_rjuPDObahj_V-47" edge="1" parent="1" source="aOqNrHkwkGL7v4gfNeq1-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="1uF0IlD_rjuPDObahj_V-46">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="aOqNrHkwkGL7v4gfNeq1-100" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="dst_mac == bridge_mac" vertex="1">
@@ -537,7 +546,7 @@
           <mxGeometry height="47.5" width="260" x="3420" y="1799.92" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-18" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;verticalAlign=top;" value="&lt;code data-end=&quot;619&quot; data-start=&quot;591&quot;&gt;__netif_receive_skb_core&lt;/code&gt;" vertex="1">
-          <mxGeometry height="214" width="249" x="1970" y="166" as="geometry" />
+          <mxGeometry height="264" width="249" x="1970" y="166" as="geometry" />
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-32" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-26">
           <mxGeometry relative="1" as="geometry" />
@@ -574,6 +583,12 @@
         </mxCell>
         <mxCell id="1uF0IlD_rjuPDObahj_V-40" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="ip_rcv" vertex="1">
           <mxGeometry height="44" width="120" x="2926" y="521.3" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-48" edge="1" parent="1" source="1uF0IlD_rjuPDObahj_V-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1uF0IlD_rjuPDObahj_V-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1uF0IlD_rjuPDObahj_V-46" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="update interface and repeat the process (to pass the hook with new inteface)" vertex="1">
+          <mxGeometry height="86.7" width="140" x="1950" y="523.3" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
