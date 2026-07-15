@@ -686,7 +686,7 @@
         <mxCell id="5Vd5IGnes5OHdAnMlGrN-10" edge="1" parent="1" source="5Vd5IGnes5OHdAnMlGrN-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="5Vd5IGnes5OHdAnMlGrN-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5Vd5IGnes5OHdAnMlGrN-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Traitement différé" vertex="1">
+        <mxCell id="5Vd5IGnes5OHdAnMlGrN-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;Traitement différé&lt;/div&gt;&lt;div&gt;Via backlog per-CPU&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="25" width="170" x="1695.25" y="940" as="geometry" />
         </mxCell>
         <mxCell id="5Vd5IGnes5OHdAnMlGrN-9" edge="1" parent="1" source="5Vd5IGnes5OHdAnMlGrN-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.463;entryY=1.067;entryDx=0;entryDy=0;entryPerimeter=0;" target="aOqNrHkwkGL7v4gfNeq1-6">
